@@ -41,9 +41,8 @@ variable "attach_public_policy" {
 }
 
 variable "bucket" {
-  description = "(Optional, Forces new resource) The name of the bucket. If omitted, Terraform will assign a random, unique name."
+  description = "The name of the bucket. If null, Terraform will assign a random, unique name."
   type        = string
-  default     = null
 }
 
 variable "bucket_prefix" {
